@@ -1,0 +1,931 @@
+https://www.bmw.com/en-au/home.html
+
+
+
+Page.js
+==========================
+// import React from "react";
+// import { Button } from "@material-tailwind/react";
+
+// import BMW from '../images/Bmw.jpg'
+// import BMWLogo_1 from '../images/BMWLogo_1.jpg'
+
+// const Page =()=>{
+//     return (
+//         <div>
+
+//             {/* Image  */}
+//                   {/* <img src={BMW}> 
+//                   </img> */}
+
+//             {/* <div  className="relative bg-cover bg-center h-screen  mx-auto" 
+//                    style={{
+//                     backgroundImage: `url(${BMW})`,
+//                   }}>
+                      
+
+//             </div>  */}
+
+//     <div className="relative bg-cover bg-center h-screen mx-auto " 
+//     style={{backgroundImage: `url(${BMW})`}}>
+
+        
+//         <div class="grid grid-cols-2">
+//         <div className="flex mt-4 mx-40 text-white flex-shrink-0 whitespace-nowrap text-xl">
+//            <div className="mx-4">logo</div>
+//            <div className="mx-4">Models</div>
+//            <div className="mx-4">Electric</div>
+//            <div className="mx-4">Build your BMW</div>
+//            <div className="mx-4">Shop online</div>
+//            <div className="mx-4">More BMW</div>
+//         </div>
+//         <div className="mt-4 text-white">Column 2</div>
+//         </div>
+
+//     <div className="absolute top-16 w-full">
+//         <hr className="border-t-2 border-gray-300 mx-auto" />
+//     </div>
+
+//        <div className="float-left mx-44">
+//         <p className="text-white mt-8">The <span className="font-bold ">Ultimate</span> Driving Machine</p>
+//        </div>
+
+//         <div class="flex justify-left items-center h-screen">
+//             <p className="text-white text-2xl float-left">The<br></br>
+//             <span className="text-9xl">XM</span><br></br>
+//             <span>THE NEW BMW XM MODELS:ALL HIHGLIGHTS.</span>
+//             </p>
+
+//             <div class="mt-80 float-left">
+//                 <button class="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+//                     Discover now
+//                 </button>
+//             </div>
+
+            
+//         </div>
+
+//         </div>         
+//         </div>
+//     )
+// }
+
+// export default Page
+    
+import React from "react";
+//import { BsFillCartFill, BsFillSaveFill } from "react-icons/bs";
+
+import BMW from "../images/Bmw.jpg";
+import search from "../images/search.png";
+import gps from "../images/gps_1.png";
+import user from "../images/user_5.png";
+import cart from "../images/cart_6.png";
+import BMWLogo from "../images/bmw_logo_4.png";
+
+const Page = () => {
+  return (
+    <div>
+      <div
+        className="relative bg-cover bg-center h-screen mx-auto"
+        style={{ backgroundImage: `url(${BMW})` }}
+      >
+
+
+<div class="grid grid-cols-4 gap-4">
+  <div class="col-span-1 ">
+    <div>
+    <div className="mx-44 mt-2 w-10 h-10 object-contain mt-4">
+            <img src={BMWLogo} />
+            </div>
+    </div>
+  </div>
+  <div class="col-span-2 ">
+    <div className="flex item-center text-white mt-4">
+    <a href="https://www.bmw.com/en-au/models.html">
+    <div className="mx-4 font-bold hidden md:block  ">Models</div>
+    </a>
+            <div className="mx-4 font-bold hidden md:block">Electric</div>
+           <a href="https://www.bmw.com/en-au/configurator.html">
+           <div className="mx-4 font-bold hidden md:block">Build your BMW</div>
+           </a>
+            <div className="mx-4 font-bold hidden md:block">Shop online</div>
+            <div className="mx-4 font-bold hidden md:block">More BMW</div>
+    </div>
+  </div>
+  <div class="col-span-1 ">
+  <div className="flex mt-4 text-white">
+            <div>
+              <img src={user} className="w-1/3 h-auto mt-2" />
+            </div>
+            <div>
+              <a href="https://www.bmw.com/en-au/shop/ls/cart" >
+              <img src={cart} className="w-1/3 h-auto mt-2" />
+              </a>
+            </div>
+            <div>
+             <a href="https://www.bmw.com/en-au/fastlane/dealer-locator.html">
+             <img src={gps} className="w-1/3 h-auto mt-2" />   
+             </a>
+            </div>
+            <div>
+            <a href="https://www.bmw.com/en-au/publicPools/search-results/search-results.html">
+            <img src={search} className="w-1/3 h-auto mt-2 object-cover" />
+            </a>
+             
+            </div>
+          </div>
+          
+  </div>
+</div>
+
+
+
+
+
+
+        {/* <div className="grid grid-cols-2">     
+          <div className="flex mt-4 mx-4 md:mx-20 text-white flex-shrink-0 whitespace-nowrap text-xl">
+          <div className="mx-4 mt-2 w-10 h-10 object-contain">
+            <img src={BMWLogo} />
+            </div>
+            <div className="mx-4 hidden md:block">Models</div>
+            <div className="mx-4 hidden md:block">Electric</div>
+            <div className="mx-4 hidden md:block">Build your BMW</div>
+            <div className="mx-4 hidden md:block">Shop online</div>
+            <div className="mx-4 hidden md:block">More BMW</div>
+          </div>
+          <div className="flex mt-4 mx-4 md:mx-64 text-white">
+            <div>
+              <img src={user} className="w-1/2 h-auto mt-2" />
+            </div>
+            <div>
+              <img src={cart} className="w-1/2 h-auto mt-2" />
+            </div>
+            <div>
+              <img src={gps} className="w-1/3 h-auto mt-2" />
+            </div>
+            <div>
+              <img src={search} className="w-1/2 h-auto mt-2" />
+            </div>
+          </div>
+        </div> */}
+
+        {/* <div className="absolute top-16 w-full">
+          <hr className="hidden md:block border-t-2 border-gray-300 mx-auto" />
+        </div> */}
+
+<div className="absolute top-16 w-full">
+          <hr className="size=30" />
+        </div>
+
+        <div className="hidden md:block float-left mx-4 md:mx-44">
+          <p className="text-white mt-4">
+            The <span className="font-bold ">Ultimate</span> Driving Machine
+          </p>
+        </div>
+
+        {/* <div className="flex flex-col justify-left items-left h-screen float-left ">
+          <div className="mt-28 float-left">
+            <p className="text-white font-bold float-left mt-20 ">The</p>
+          </div>
+          <div>
+            <p className="text-white text-9xl float-left ">XM</p>
+          </div>
+          <div>
+            <p className="text-white float-left ">
+              THE NEW BMW XM MODELS:ALL HIHGLIGHTS.
+            </p>
+          </div>
+          <div>
+            <a href="https://www.bmw.com/en-au/models/m-series/bmw-i7-m70/showroom/i7-m70.html">
+            <button className="w-full md:w-auto bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Discover now
+            </button>
+            </a>
+          </div>
+        </div> */}
+
+
+<div class="flex flex-col justify-left items-start h-screen mt-60">
+  <p class="text-white  font-bold mx-32 mt-20">The</p>
+  <p class="text-white text-9xl mx-32">XM</p>
+  <p class="text-white  font-bold mx-32 ">THE NEW BMW XM MODELS:ALL HIHGLIGHTS.</p>
+  <a href="https://www.bmw.com/en-au/models/m-series/bmw-i7-m70/showroom/i7-m70.html">
+            <button className="w-full md:w-auto bg-blue-900 hover:bg-blue-700 text-white font-bold mx-32 py-2 px-4 rounded">
+              Discover now
+            </button>
+            </a>  
+</div>
+
+
+      </div>
+    </div>
+  );
+};
+
+export default Page;
+
+=============================
+ShoppingTool.js
+=============================
+import React from "react";
+import { Button } from "@material-tailwind/react";
+import car1 from '../images/car1.webp'
+import car2 from '../images/car2.webp'
+import car3 from '../images/car3.webp'
+
+const ShoppingTool=()=>{
+    return(
+        <div>
+           <div class="mx-auto w-1/6 mt-10">
+               <div><p className="font-bold mx-28">SHOPPING TOOLS</p></div>
+                <div><p className="text-4xl">FIND YOUR BMW.</p></div>
+            </div>
+
+            <div className="flex flex-col md:flex-row">
+                <div>
+                <div>
+                <img src={car1} width="600" height="600" />
+                </div>
+                <div>
+                New Car Locator
+                </div>
+                <a href="https://shop.bmw.com.au/#/">
+                <div className="mt-8 text-black-900">
+                <Button className="text-black border-black" variant="outlined">Search now</Button>
+                </div>
+                </a>
+                </div>
+                
+
+                <div>
+                <div>
+                <img src={car2} width="600" height="600" />
+                </div>
+                <div>
+                Request a Test Drive
+                </div>
+               <a href="https://www.bmw.com/en-au/fastlane/request.html?type=td">
+               <div className="mt-8">
+                <Button className="text-black border-black" variant="outlined">Book now</Button>
+                </div>
+               </a>
+                </div>
+
+                <div>
+                <div>
+                <img src={car3} width="600" height="600" />
+                </div>
+                <div>
+                Build Your Own
+                </div>
+                <a href="https://www.bmw.com/en-au/configurator.html">
+                <div className="mt-8">
+                <Button className="text-black border-black" variant="outlined">Build & Price</Button>
+                </div>
+                </a>
+                
+                </div>
+
+            </div>
+                   {/* <div class="flex flex-col md:flex-row">
+  <div class="md:w-1/3">
+    <div>
+      <img src={car1} width="600" height="600" />
+    </div>
+    <div>
+      New Car Locator
+    </div>
+    <div class="mt-8 text-black-900">
+      <Button class="text-black border-black" variant="outlined">Search now</Button>
+    </div>
+  </div>
+
+  <div class="md:w-1/3 md:mx-4 mt-8 md:mt-0">
+    <div>
+      <img src={car2} width="600" height="600" />
+    </div>
+    <div>
+      Request a Test Drive
+    </div>
+    <div class="mt-8">
+      <Button class="text-black border-black" variant="outlined">Book now</Button>
+    </div>
+  </div>
+
+  <div class="md:w-1/3 mt-8 md:mt-0">
+    <div>
+      <img src={car3} width="600" height="600" />
+    </div>
+    <div>
+      Build Your Own
+    </div>
+    <div class="mt-8">
+      <Button class="text-black border-black" variant="outlined">Build & Price</Button>
+    </div>
+  </div>
+</div> */}
+
+        </div>
+
+
+    //     <div>
+    //     <div class="mx-auto w-1/6 mt-10">
+    //        <div><p className="font-bold mx-16 mt-2">SHOPPING TOOLS</p></div>
+    //         <div><p className="text-2xl mx-4">FIND YOUR BMW.</p></div>
+    //     </div>
+    //     <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+
+    //     <div class=" p-4">
+    //     <div className=" m-20 mt-28">
+    //     <div>
+    //     <img src={car1} width="600" height="600"/>
+    //     </div>
+    //     <div className="mx-10">
+    //     New Car Locator
+    //     </div>
+    //     <div>
+    //     <a href="https://shop.bmw.com.au/#/">
+    //     <button class="mx-10 mt-0 border-2 border-black text-black font-bold py-2 px-4 rounded">
+    //     Search Now
+    //     </button>
+    //     </a>    
+        
+    
+    //     </div>
+    //     </div>
+    //     </div>
+
+
+    //     <div class=" p-4">
+    //     <div className=" m-20 mt-28">
+    //     <div>
+    //     <img src={car2} width="600" height="600"/>
+    //     </div>
+    //     <div className="mx-10">
+    //     Request a Test Drive
+    //     </div>
+    //     <div>
+    //     <a href="https://www.bmw.com/en-au/fastlane/request.html?type=td">
+    //     <button class="mx-14 mt-0 text-black font-bold py-2 px-4 rounded border-2 border-black">
+    //     Book Now
+    //     </button>
+    //     </a>   
+        
+    //     </div>
+    //     </div>
+    //     </div>
+
+
+    //     <div class=" p-4">
+    //     <div className=" m-20 mt-28">
+    //     <div>
+    //     <img src={car3} width="600" height="600"/>
+    //     </div>
+    //     <div class="mx-14">
+    //     Build Your Own
+    //     </div>
+    //     <div>
+    //     <a href="https://www.bmw.com/en-au/configurator.html">
+    //     <button class="mx-12 text-black font-bold py-2 px-4 rounded border-2 border-black">
+    //     Build & Price
+    //     </button>
+    //     </a>
+    //     </div>
+    //     </div>
+
+
+    //     </div>
+    //     </div>
+
+       
+    // </div>
+    )
+}
+export default ShoppingTool;
+
+============================
+ThirdPage.js
+===========================
+            import React from "react";
+            import { Button } from "@material-tailwind/react";
+            import bg_2 from '../images/bg_2.webp'
+
+            const ThirdPage=()=>{
+                return(
+            //         <div>
+                        
+
+            // <div className="w-full h-screen mt-8 bg-cover bg-no-repeat bg-center"
+            //         style={{backgroundImage: `url(${bg_2})`, height: "50vh"}}>
+
+            // <div class="flex flex-col justify-left items-left h-screen ">
+                    
+            //         <div>
+            //         <p className="text-white font-bold float-left mt-20 mx-32">BMW X RANGE</p>
+            //         </div>
+            //          <div>
+            //          <p className="text-white text-2xl float-left mx-32 ">AND THEN SOME</p>
+            //          </div>
+            //          <div>
+            //          <button class=" text-white border-white font-bold mx-32 mt-2 py-2 px-4 rounded">
+            //          Explore More
+            //          </button>
+            //          <button className="text-white border-white font-bold mx-32 mt-2 py-2 px-4 rounded">
+            //               Discover now
+            //             </button>
+            //          </div>
+
+            //      </div>
+            // </div>
+
+            // </div>
+
+            <div>
+            {/* <div className="relative bg-cover bg-no-repeat bg-top h-1/2 mx-auto mt-8 flex items-center" 
+                style={{backgroundImage: `url(${bg_2})`}}>
+            </div> */}
+
+            {/* <div className="w-full h-screen mt-8">
+            <img src={bg_2}/>
+            </div> */}
+
+            <div className="w-full h-screen mt-8 bg-cover bg-no-repeat bg-center"
+                style={{backgroundImage: `url(${bg_2})`, height: "50vh"}}>
+
+            {/* <div class="flex flex-col justify-left items-left h-screen ">
+
+            <div>
+            <p className="text-white font-bold float-left mt-20 mx-32">BMW X RANGE</p>
+            </div>
+            <div>
+            <p className="text-white text-2xl float-left mx-32 ">AND THEN SOME</p>
+            </div>
+            <div>
+            <a href="https://www.bmw.com/en-au/discover/x-range.html">
+            <button class=" text-white border border-white font-bold mx-32 mt-2 py-2 px-4 rounded">
+            Explore More
+            </button>
+            </a>   
+            </div>
+                
+            </div>   */}
+
+<div class="flex flex-col justify-left items-start h-screen">
+  <p class="text-white font-bold mx-32 mt-20">BMW X RANGE</p>
+  <p class="text-white text-2xl mx-32">AND THEN SOME</p>
+  <a href="https://www.bmw.com/en-au/discover/x-range.html">
+    <button class="text-white border border-white font-bold mx-32 mt-2 py-2 px-4 rounded">
+      Explore More
+    </button>
+  </a>   
+</div>
+
+
+            {/* <div class="flex flex-col justify-center items-center h-screen">
+            <p class="text-white font-bold mt-20">BMW X RANGE</p>
+            <p class="text-white text-2xl mt-8">AND THEN SOME</p>
+            </div> */}
+
+            </div>
+            </div>
+                )
+            }
+            export default ThirdPage;
+            
+====================================
+FourthPage.js
+===================================
+import React from "react";
+import { Button } from "@material-tailwind/react";
+import car4 from '../images/car4.webp'
+import car5 from '../images/car5.webp'
+import car6 from '../images/car6.jpeg'
+
+const FourthPage=()=>{
+    return (
+        // <div>
+        //     <div className="">
+
+        //     <div className="flex m-20 mt-28">
+        //     <div>
+        //     <img src={car4}/>
+        //     </div>
+        //     <div className="ml-8">
+        //          BMW FINANCIAL SERVICES
+        //         <p>CURRENT FINANCE <br></br> OFFERS.</p> 
+        //         <p>View our current Financial Services offers today.</p>
+        //         <Button className="text-black border-black" variant="outlined">Book now</Button>
+        //     </div>
+        //     </div>
+
+        //      <div className="w-1/2 h-screen mt-8 ml-16">
+             
+        //      <div className="flex ">
+        //      <div>
+        //     <img src={car5}/>
+        //     </div>
+        //     <div>
+        //         <p>SAFETY RECALLS.</p>
+        //         <p>
+        //         BMW Group Australia takes all safety recalls very seriously. Our customer's safety in our products continues to be of<br></br>
+        //         paramount importance and it remains our objective to have all vehicles subject to any recall rectified as soon as possible.   
+        //         </p>
+                
+        //      </div>
+        //      </div>
+
+
+        //     <div className="mt-12 mr-80">
+        //     * Overseas model displayed with optional equipment.
+        //     </div>
+        //     </div> 
+
+        //     </div>
+        // </div>
+
+
+        <div>
+            <div className="">
+
+            <div  className="flex flex-col items-center md:flex-row">
+            <div className="w-1/2 m-20 mt-28">
+            <img src={car4}/>
+            </div>
+            <div>
+               <p className="font-bold">BMW AUSTRALIA OFFERS</p>
+               <p className="text-3xl">CURRENT OFFERS.</p>
+               <p className="font-bold">View our current BMW Australia offers today.</p>
+               <a href="https://www.bmw.com/en-au/offers-and-services/promotions/bmw-finance-offers.html">
+               <button class="w-full md:w-auto text-black border border-black font-bold mt-2 py-2 px-4 rounded">
+            Explore More
+            </button>
+               </a>
+               
+            </div>
+            </div>
+
+
+            <div class="flex flex-col items-center md:flex-row">
+                <div class=" p-4">
+                <div>
+                    <p className="font-bold">BMW FINANCIAL SERVICES</p>
+                    <p className="text-5xl">FINANCE DESIGNED ESPECIALLY FOR YOUR BMW.</p>
+                    <p className="">Driver Driven Finance.</p>
+                    <a href="https://www.bmw.com/en-au/offers-and-services/financial-services.html">
+                    <button class="w-full md:w-auto text-black border border-black font-bold mt-2 py-2 px-4 rounded">
+                    Find out More
+                    </button>
+                    </a>                       
+                    </div>
+                </div>
+  <div class=" p-4">
+  <div className="w-full  mx-0 ">
+            <img src={car6}/>
+            </div>
+  </div>
+</div>
+            
+
+            {/* <div  className="flex flex-col items-center md:flex-row">
+            <div>
+               <p className="font-bold">BMW AUSTRALIA OFFERS</p>
+               <p className="text-3xl">CURRENT OFFERS.</p>
+               <p className="font-bold">View our current BMW Australia offers today.</p>
+               <button class="w-full md:w-auto text-black border-black font-bold mt-2 py-2 px-4 rounded">
+            Explore More
+            </button>
+            </div>
+            <div className="w-1/2 mx-80 ">
+            <img src={car6}/>
+            </div>
+            </div> */}
+
+
+            {/* <div  className="flex flex-col items-center md:flex-row">
+            
+            <div>
+               <p className="font-bold">BMW AUSTRALIA OFFERS</p>
+               <p className="text-3xl">CURRENT OFFERS.</p>
+               <p className="font-bold">View our current BMW Australia offers today.</p>
+               <button class="w-full md:w-auto text-black border-black font-bold mt-2 py-2 px-4 rounded">
+            Explore More
+            </button>
+            </div>
+            <div className="w-1/2 m-20 mx-32">
+            <img src={car6}/>
+            </div>
+            </div> */}
+
+            {/* <div className=" m-20 mt-28">
+            <img src={car5}/>
+            </div> */}
+{/* 
+             <div className="w-1/2 h-screen mt-8 ml-16">
+           <div className="">
+           <div>
+            <img src={car5}/>
+            </div>
+
+            <div>
+               <p className=" text-3xl">SAFETY RECALLS.</p>
+               <p className="text-xl">BMW Group Australia takes all safety recalls very seriously. Our customer’s safety in our products continues to be of paramount importance and it remains our objective to have all vehicles subject to any recall rectified as soon as possible.</p>
+               <button class=" text-black border-black font-bold mt-2 py-2 px-4 rounded">
+            Find out More
+            </button>
+            </div>
+           </div>
+            
+            <div className="mt-12 mr-80">
+            * Overseas model displayed with optional equipment.
+            </div>
+            </div>  */}
+
+
+         <div  className="flex flex-col items-center justify-center sm:flex-row">
+            
+            <div className="w-1/2 m-20 mt-28">
+            <img src={car5}/>
+            {/* <p> * Overseas model displayed with optional equipment.</p> */}
+            </div>
+            
+            
+            <div>
+            <p className=" text-3xl">SAFETY RECALLS.</p>
+               <p className="text-xl">BMW Group Australia takes all safety recalls very seriously.
+               <br></br>Our customer's safety in our products continues to be of <br></br>
+               paramount importance and it remains our objective to <br></br>have all vehicles subject to any recall rectified <br></br>as soon as possible. </p>
+              <a href="https://www.recall.bmw.com.au/">
+              <button class="w-full md:w-auto text-black border border-black font-bold mt-2 py-2 px-4 rounded">
+               Find out More
+            </button>
+              </a>
+               
+            </div>
+           
+            </div>
+           
+
+    
+            </div>
+
+
+            {/* <div class=" flex flex-col  grid grid-cols-4" >
+  <div class=" p-4 ">
+   <div className="mx-10 mt-10 ">CONTACT</div>
+   <div className="mx-10 font-bold hidden md:block">Contact us</div>
+   <div className="mx-10 font-bold hidden md:block">Find a Dealer</div>
+   <div className="mx-10 font-bold hidden md:block">Contact BMW Financial Services</div>
+  </div>
+  <div class=" p-4">
+  <div className="mx-10 mt-10 ">QUICK LINKS</div>
+   <div className="mx-10 font-bold hidden md:block">BMW Safety Recalls</div>
+   <div className="mx-10 font-bold hidden md:block">New Car Locator</div>
+   <div className="mx-10 font-bold hidden md:block">Apply for Finance</div>
+   <div className="mx-10 font-bold hidden md:block">Book a Service</div>
+  </div>
+  <div class=" p-4">
+  <div className="mx-10 mt-10 ">EXPERIENCE BMW</div>
+   <div className="mx-10 font-bold hidden md:block">Careers</div>
+   <div className="mx-10 font-bold hidden md:block">BMW i</div>
+   <div className="mx-10 font-bold hidden md:block">BMW X Range</div>
+   <div className="mx-10 font-bold hidden md:block">BMW Driving Experience</div>
+   <div className="mx-10 font-bold hidden md:block">BMW Connected Drive</div>
+  </div>
+  <div class=" p-4">
+  <div className="mx-10 mt-10 ">LEGAL</div>
+   <div className="mx-10 font-bold hidden md:block">Connected Drive Legal Information</div>
+  </div>
+            </div>   */}
+        </div>
+    )
+}
+export default FourthPage;
+====================================
+
+=====================================
+import React from "react";
+import { Typography } from "@material-tailwind/react";
+import facebook from '../images/facebook.png';
+import twitter from '../images/twitter.png';
+import instragram from '../images/instragram.png'
+import youtube from '../images/youtube.png'
+import linkedin from '../images/linkedin.png'
+const FooterPage =()=>{
+    return(
+        <div>
+            <div className="bg-gray-200 ">
+
+            <div className=" grid grid-cols-4 gap-3 mt-8">
+            <div className="mt-16 text-align: left">                
+            <div className="text-align: left">CONTACT</div>
+
+            <a href="https://www.bmw.com/en-au/fastlane/contact.html">
+            <div className="mt-4 ml-2 text-gray-700 hover:text-black font-bold hidden md:block">
+                Contact us
+            </div>
+            </a>
+
+            <a href="https://www.bmw.com/en-au/fastlane/dealer-locator.html">
+            <div className="mt-4 ml-6 text-gray-700 hover:text-black font-bold hidden md:block">Find a Dealer</div>
+            </a>
+
+            <a href="https://www.bmw.com/en-au/offers-and-services/financial-services.html#Contact_Us hidden md:block">
+            <div className="mt-4 ml-32 text-gray-700 hover:text-black font-bold hidden md:block">Contact BMW Financial Services</div>
+            </a>
+            
+            </div>
+   
+            <div className="mt-8">
+            <div className="mt-8 text-align: left">                
+            <div className="mr-4 " >QUICK LINKS</div>
+           
+            <a href="https://www.recall.bmw.com.au/">
+            <div className="mt-4 ml-10 text-gray-700 hover:text-black font-bold hidden md:block">BMW Safty Recalls<span>&#x2197;</span> </div>
+            </a>
+
+            <a href="https://shop.bmw.com.au/#/stock-locator">
+            <div className="mt-4 ml-6 text-gray-700 hover:text-black font-bold hidden md:block">New Car Locator<span>&#x2197;</span></div>
+            </a>
+
+            <a href="https://myfinance.bmw.com.au/fin/m/">
+            <div className="mt-4 ml-8 text-gray-700 hover:text-black font-bold hidden md:block">Apply for Finance<span>&#x2197;</span></div>
+            </a>
+
+            <a href="https://www.bmw.com/en-au/offers-and-services/personal-services/bmw-service-booking.html">
+            <div className="mt-4 ml-2 text-gray-700 hover:text-black font-bold hidden md:block">Book a Service</div>
+            </a>
+           
+            </div>
+            </div>
+
+            <div className="mt-8">
+            <div className="mt-8 text-align: left">                
+            <div className="mr-4">EXPERIENCE BMW</div>
+             
+            <a href="https://www.bmwgroup.jobs/au/en.html">
+            <div className="mt-4 mr-20 text-gray-700 hover:text-black font-bold hidden md:block">Careers <span>&#x2197;</span></div>
+            </a>
+
+            <a href="https://www.bmw.com/en-au/discover/electromobility/electric-cars.html">
+            <div className="mt-4 mr-24 text-gray-700 hover:text-black font-bold hidden md:block">BMW i</div>
+            </a>
+            
+            <a href="https://www.bmw.com/en-au/discover/x-range.html">
+            <div className="mt-4 mr-10 text-gray-700 hover:text-black font-bold hidden md:block">BMW X Range</div>
+            </a>
+            
+            <a href="https://www.bmw.com/en-au/discover/driving-experience.html">
+            <div className="mt-4 ml-10 text-gray-700 hover:text-black font-bold hidden md:block">BMW Driving Experience</div>
+            </a>
+            
+            <a href="https://www.bmw.com/en-au/offers-and-services/bmw-connected-drive/bmw-connected-drive.html">
+            <div className="mt-4 ml-6 text-gray-700 hover:text-black font-bold hidden md:block">BMW Connected Drive</div>
+            </a>
+            
+            </div>
+            </div>
+
+            <div className="mt-8">
+            <div className="mt-8 text-align: left">                
+            <div className="mr-44">LEGAL</div>
+
+            <a href="https://www.bmw.com/en-au/offers-and-services/bmw-connected-drive/overview.html">
+            <div className="mt-4 ml-10 text-gray-700 hover:text-black font-bold hidden md:block">Connected Drive Legal Information</div>
+            </a>
+            
+            </div>
+            </div>
+
+            </div>
+              {/* ICONS */}
+              <div>
+                  <div className="flex ml-44">
+
+                  <a href="https://www.facebook.com/BMWAustralia/" target="_blank">
+                  <img src={facebook}width="30" height="30" class="mr-2">                       
+                  </img>
+                  </a>
+
+                  <a href="https://twitter.com/bmwau" target="_blank">
+                  <img src={twitter}width="30" height="30" class="mr-2">                       
+                  </img>
+                  </a> 
+
+                  <a href="https://www.instagram.com/bmwau/?hl=en" target="_blank">
+                  <img src={instragram}width="30" height="30" class="mr-2">                       
+                  </img>
+                  </a>
+
+                  <a href="https://www.youtube.com/channel/UC2fD3blIgfF1lLYGxA0K12A" target="_blank">
+                  <img src={youtube}width="30" height="30" class="mr-2">                       
+                  </img>
+                  </a>
+               
+                  <a href="https://au.linkedin.com/showcase/bmw-group-australia" target="_blank">
+                  <img src={linkedin}width="30" height="30" >                       
+                  </img>
+                  </a>  
+                  </div>
+
+              </div>
+
+            </div>
+           
+
+           {/* FOOTER */}
+            <div className="mr-8 ml-8">
+            <footer className=" flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
+      <Typography color="blue-gray" className="font-normal">
+        &copy; BMW Group Australia 2023
+      </Typography>
+      <ul className="flex flex-wrap items-center gap-y-2 gap-x-8 ">
+        <li>
+          <Typography
+            as="a"
+            href="https://www.bmw.com/en-au/footer/privacy.html"
+            color="blue-gray"
+            className="font-bold transition-colors hover:text-blue-500 focus:text-blue-500 "
+          >
+           Privacy and Cookie Policy
+          </Typography>
+        </li>
+        <li>
+          <Typography
+            as="a"
+            href="https://www.bmw.com/en-au/footer/terms.html"
+            color="blue-gray"
+            className="font-bold transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            Terms & Condition
+          </Typography>
+        </li>
+        <li>
+          <Typography
+            as="a"
+            href="https://www.bmw.com/en-au/footer/con-terms.html"
+            color="blue-gray"
+            className="font-bold transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            Configuration Terms & Conditions
+          </Typography>
+        </li>
+        <li>
+          <Typography
+            as="a"
+            href="https://www.bmw.com/en-au/footer/whistleblower-policy.html"
+            color="blue-gray"
+            className="font-bold transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            WhistleBlower Policy
+          </Typography>
+        </li>
+      </ul>
+    </footer>
+            </div>
+          
+
+        </div>
+    )
+}
+ export default FooterPage;
+ 
+ =========================
+ App.js
+ =========================
+ 
+//https://www.bmw.com/en-au/home.html
+import logo from './logo.svg';
+import './App.css';
+
+import { ThemeProvider } from "@material-tailwind/react";
+
+import Example from './components/Example';
+import Head from './components/Head';
+import Page from './components/Page';
+import ShoppingTool from './components/ShoppingTool'
+import ThirdPage from './components/ThirdPage';
+import FourthPage from './components/FourthPage';
+import FooterPage from './components/FooterPage';
+
+
+function App() {
+  return (
+    <div className="App">
+      <ThemeProvider>
+      {/* <Example/>
+      <Head/> */}
+      <Page/>
+      <ShoppingTool/>
+      <ThirdPage/>
+      <FourthPage/>
+      <FooterPage/>
+      </ThemeProvider>
+     
+      
+    </div>
+  );
+}
+
+export default App;
+
