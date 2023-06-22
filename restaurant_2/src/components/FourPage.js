@@ -17,11 +17,13 @@ import food_menu_4 from '../images/food-menu-4.png'
 import food_menu_5 from '../images/food-menu-5.png'
 import food_menu_6 from '../images/food-menu-6.png'
 import star from '../images/star.png'
-
+import shape_gray from '../images/shape-grey.png'
 const FourPage=()=>{
 return(
     <div className="bg-gray-300  ">
-        <div className="mt-40 bg-gray-300">
+        
+    <div className="p-4">
+     <div className=" mt-10 bg-gray-300">
            <div className="text-red-700 font-bold">
            Popular Dishes
            </div>
@@ -31,17 +33,6 @@ return(
            <div className="text-gray-900 mt-2">
            Food is any substance consumed to provide nutritional <br></br> support for an organism.
            </div>
-
-           {/* <div className="flex flex-wrap justify-center items-center mt-6">
-
-           <Button className="bg-yellow-800 mx-4">All</Button>
-           <Button className="text-black bg-white mx-4">Pizza</Button>
-           <Button className="text-black bg-white mx-4">Burger</Button>
-           <Button className="text-black bg-white  mx-4">Drinks</Button>
-           <Button className="text-black bg-white  mx-4">Sandwich</Button>
-           </div> */}
-           
-
         </div>
 
         <div className="flex flex-wrap justify-center items-center bg-gray-300 mt-10">
@@ -384,6 +375,14 @@ return(
         
 
         </div>
+    </div> 
+
+     <div className="mt-10 flex flex-row justify-between">
+    <img src={shape_gray} width="" height="30" >
+    </img>
+    <img src={shape_gray} width="" height="30" className="hidden md:flex">
+    </img>
+  </div>  
 
   
     </div>

@@ -12,13 +12,15 @@ import  avatar_1 from '../images/avatar-1.jpg';
 import  avatar_2 from '../images/avatar-2.jpg';
 import  avatar_3 from '../images/avatar-3.jpg';
 import star from '../images/star.png'
-
+import shape_white from '../images/shape-grey.png'
 const SevenPage=()=>{
 return(
-    <div className="mt-80">
+
+  <div className="p-10 bg-gray-300">
+      <div className="mb-20">
          <div className="bg-gray-300">
-        <div className="mt-40 bg-gray-300">
-           <div className="text-red-700 font-bold mt-20">
+        <div className="mt-40 bg-gray-300 p-0">
+           <div className="text-red-700 font-bold mt-0">
            Testimonials
            </div>
            <div className="text-3xl font-bold mt-2">
@@ -35,7 +37,7 @@ return(
 
         </div>
 
-        <div className="flex flex-cols justify-center items-center bg-gray-300 mt-10">
+        <div className="p-0 flex flex-cols justify-center items-center bg-gray-300 mb-20">
 
       <Card className="max-w-[24rem] overflow-hidden mx-4 ">
 
@@ -218,8 +220,9 @@ return(
        </Card>
         </div>
       
+         </div> 
     </div>
-    </div>
+  </div>
 )
 }
 export default SevenPage

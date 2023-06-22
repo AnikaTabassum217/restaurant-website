@@ -1,0 +1,120 @@
+
+.error_message{
+   color: red;
+   margin-right: 155px;
+}
+
+.register{
+    background-color: rgb(148, 148, 246);
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 2%;
+    padding-bottom: 50px;
+}
+.registration_name{
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 50px;
+}
+.first_name{
+    color: rgb(13, 14, 14);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    
+}
+
+
+.last_name{
+    color: rgb(13, 14, 14);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    
+}
+
+.email{
+    color: rgb(13, 14, 14);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+}
+
+.password{
+    color: rgb(13, 14, 14);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 266px;
+    height: 35px;
+}
+.confirm_password{
+    color: rgb(13, 14, 14);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 266px;
+    height: 35px;
+}
+.checkbox{
+    color: rgb(13, 14, 14);
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 220px;
+    border-radius: 10px;
+    width: 180px;
+    height: 25px;
+}
+.checkboxDescription{
+    display: flex;
+}
+.description{
+    margin-top: 23px;
+    margin-left: -70px;
+}
+.terms_and_condition{
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(6, 6, 209);
+}
+
+
+    .registration{
+		margin-left: -115px;
+		margin-top: 40px;
+
+		font-family: "Roboto", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		background: rgb(47, 52, 126);
+		width: 190px;
+		height: 40px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: none;
+		color: #fff;
+		border-radius: 15px ;
+		cursor: pointer;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: box-shadow,transform;
+		}

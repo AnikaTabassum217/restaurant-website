@@ -3,21 +3,23 @@ import { Button } from "@material-tailwind/react";
 import hero_bannar from '../images/hero-bg.jpg'
 import cta_banner from '../images/cta-banner.png'
 import sale_shape from '../images/sale-shape.png'
+import shape_gray from '../images/shape-white.png'
 
 const FivePage=()=>{
 return(
     <div className="bg-gray-300">
         
-        <div className="relative bg-cover bg-center h-screen  mx-auto" 
+        <div className="relative bg-cover bg-center h-screen sm:h-100 md:h-96 lg:h-screen mx-auto
+        mt-auto sm:mt-1" 
                    style={{
-                    backgroundImage: `url(${hero_bannar})`, height: "100vh"}}
+                    backgroundImage: `url(${hero_bannar})`, height: "70vh" }}
         
         >
 
 
             <div className="flex flex-wrap">
                
-              <div className="mx-20 ">
+              <div className="mx-20 mt-16">
                   <div className="text-white mt-20 text-5xl font-bold">
                   The Foodie Have Excellent <br></br> 
                   <span className="text-orange-600">Of Quality Burgers!</span>
@@ -45,6 +47,15 @@ return(
             
 
         </div>
+
+        <div className="mt-10 flex flex-row justify-between">
+            <img src={shape_gray} width="" height="30" >
+            </img>
+            <img src={shape_gray} width="" height="30" className="hidden md:flex">
+            </img>
+        </div> 
+
+
     </div>
 )
 }

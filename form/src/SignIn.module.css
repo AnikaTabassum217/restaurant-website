@@ -1,0 +1,126 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #5149c4;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+.mother_container {
+  margin-top: 20px;
+}
+
+.custom_signin_button {
+  margin-top: 20px;
+}
+
+.custom_vertical_gap {
+  margin-top: 10px;
+}
+
+.back_button {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent content from wrapping to a new line */
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back_button__icon {
+  margin-right: 8px;
+}
+
+.back_button__text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.passwordInput {
+  display: flex;
+  align-items: center;
+}
+
+.passwordInput input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.passwordInput button {
+  padding: 5px;
+  margin-left: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

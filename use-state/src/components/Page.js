@@ -79,6 +79,7 @@ import BMWLogo from "../images/bmw_logo_4.png";
 const Page = () => {
   return (
     <div>
+      
       <div
         className="relative bg-cover bg-center h-screen mx-auto"
         style={{ backgroundImage: `url(${BMW})` }}
@@ -213,6 +214,7 @@ const Page = () => {
 
 
       </div>
+
     </div>
   );
 };

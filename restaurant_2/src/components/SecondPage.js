@@ -19,8 +19,8 @@ import  avatar_3 from '../images/avatar-3.jpg';
 
 const SecondPage=()=> {
   return (
-    <>
-    <div className="grid grid-cols-3 gap-2 bg-white sticky top-0 z-10 text-orange-800">
+    <div className="bg-gray-300">
+    <div className="grid grid-cols-3 gap-2 bg-white text-orange-800 fixed top-0 w-full z-50">
             <div className=" p-4 text-black text-xl font-bold">Foodie <span className="text-orange-600">.</span></div>
             <div className=" p-4 text-black hidden md:flex  flex items-center justify-end">
               <div className="font-bold hover:text-orange-600">Home</div>
@@ -34,10 +34,10 @@ const SecondPage=()=> {
             </div>
     </div>  
 
-    <div class="flex flex-wrap p-20 mx-auto lg:mx-60">
+    <div class="bg-gray-00 flex flex-wrap p-20 mx-auto lg:mx-60">
     <div class="flex-30 ">
       
-    <div class="bg-gray- p-4 mt-0">
+    <div class="bg-gray-00 p-4 mt-0">
 <Card className="max-w-[16rem] overflow-hidden mx-6">
 
 <CardFooter className="flex items-center justify-between">
@@ -238,11 +238,13 @@ className="m-0 rounded-none"
     
   </div>
 
-  <div>
+  <div className="flex flex-row justify-between ">
     <img src={shape_gray} width="" height="30" >
     </img>
+    <img src={shape_gray} width="" height="30" className="hidden md:flex">
+    </img>
   </div>
-  </>
+   </div>
   );
 }
 

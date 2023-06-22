@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"Bangladesh",
+        "capital":"Dhaka"
+    },
+    {
+        "id":2,
+        "name":"India",
+        "capital":"Dilhi"
+    },
+    {
+        "id":3,
+        "name":"Pakistan",
+        "capital":"Islamabad"
+    },
+    {
+        "id":4,
+        "name":"USA",
+        "capital":"Washington"
+    },
+    {
+        "id":5,
+        "name":"UK",
+        "capital":"London"
+    }
+]

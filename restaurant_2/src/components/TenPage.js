@@ -4,6 +4,18 @@ import facebook from '../images/facebook.png'
 import twitter from '../images/twitter.png'
 import instragram from '../images/instagram.png'
 import letter from '../images/letter-p.png'
+import { Select, Option } from "@material-tailwind/react";
+import { Textarea } from "@material-tailwind/react";
+import {
+    Card,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Typography,
+    Input,
+    Checkbox,
+    Button,
+  } from "@material-tailwind/react";
 
 const TenPage=()=>{
     return (
@@ -59,8 +71,8 @@ const TenPage=()=>{
     </p><br></br>
 
 
-    <div className="flex flex-wrap">
-    <img src={facebook} width="30" className="mt-0 mr-10">
+    <div className="flex flex-wrap mx-14">
+    <img src={facebook} width="30" className="mt-0 mr-2">
         </img>
 
         
@@ -95,7 +107,7 @@ const TenPage=()=>{
       </p>
 </div>
 
-  <div className=" hidden md:flex absolute top-0 left-2/4 w-1/4 h-full flex justify-center items-center">
+<div className=" hidden md:flex absolute top-0 left-2/4 w-1/4 h-full flex justify-center items-center">
   <p className="text-black text-xl font-bold">
   Opening Hours<br></br>
       <p className="text-gray-800 mt-4">
@@ -108,9 +120,57 @@ const TenPage=()=>{
       Saturday: 10:00-16:00
       </p>
       </p>
-  </div>
-  <div className="absolute top-0 left-3/4 w-1/4 h-full flex justify-center items-center">
-    <h1 className="text-black text-5xl font-bold"></h1>
+</div>
+  <div className="hidden md:flex absolute top-0 left-3/4 w-1/4 h-full flex justify-center items-center">
+    {/* <h1 className="text-black text-5xl font-bold"></h1> */}
+    <Card className="w-96">
+      {/* <CardHeader
+        variant="gradient"
+        color="blue"
+        className="mb-4 grid h-28 place-items-center"
+      >
+        <Typography variant="h3" color="white">
+          Sign In
+        </Typography>
+      </CardHeader> */}
+      <CardBody className="flex flex-wrap gap-4">
+        <Input label="Name" size="sm" />
+        <Input label="Eamil" size="lg" />
+        <Select label="Select Person">
+        <Option>Person</Option>
+        <Option>2 Person</Option>
+        <Option>3 Person</Option>
+        <Option>4 Person</Option>
+        <Option>5 Person</Option>
+      </Select>
+      <div className="w-96">
+      <Textarea label="Message" />
+    </div>
+        {/* <Input label="Eamil" size="lg" /> */}
+       
+
+        <div className="-ml-2.5">
+          {/* <Checkbox label="Remember Me" /> */}
+        </div>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Button className="bg-yellow-800 hover:bg-black  ">
+         Book A Table
+        </Button>
+        <Typography variant="small" className="mt-6 flex justify-center">
+          {/* Don't have an account? */}
+          <Typography
+            as="a"
+            href="#signup"
+            variant="small"
+            color="blue"
+            className="ml-1 font-bold"
+          >
+            {/* Sign up */}
+          </Typography>
+        </Typography>
+      </CardFooter>
+    </Card>
   </div>
 
                

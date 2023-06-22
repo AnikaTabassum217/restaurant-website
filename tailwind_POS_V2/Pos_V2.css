@@ -1,0 +1,191 @@
+.receiptone_3_tailwind_pos{
+ margin-left: 50rem;
+}
+.receiptone_3_cabang{
+    margin-left: 50rem;
+}
+.receiptone_3_grid-container-no {
+    display: inline-grid;
+    grid-template-columns: 20rem 20rem ;
+    padding: 10px;
+    }
+
+    .receiptone_3_margin_no{
+        margin-left: 45rem;
+        margin-top: 3rem;
+      }
+      .receiptone_3_margin_no{
+        margin-left: 45rem;
+        margin-top: 3rem;
+      }
+
+      .receiptone_3_large-hr {
+        border: none;
+        height: 1px;
+        background-color: #000;
+        width:30%;
+        /* margin-left: 400px;  */
+        margin-right: 660px ;
+        }
+        .receiptone_3_grid-container_item {
+            display: inline-grid;
+            grid-template-columns: 45px 245px 100px 75px;
+            padding: 10px;
+      }
+      .receiptone_3_item_margin{
+        margin-left: 42rem;
+      }
+      .receiptone_3_margin_no{
+        margin-left: 45rem;
+        margin-top: 3rem;
+      }
+      .receiptone_3_grid-container-below {
+        display: inline-grid;
+        grid-template-columns: 350px 108px ;
+        padding: 10px;
+    }
+      .receiptone_3_margin_below_1{
+        margin-left: 43rem;
+        margin-top: 0rem;
+      
+    }
+    .receiptone_3_margin_below_2{
+        margin-left: 43rem;
+        margin-top: -5rem;
+      
+    }
+    .receiptone_3_margin_below_3{
+        margin-left: 43rem;
+        margin-top: 0rem;
+      
+    }
+    
+        @media (max-width: 1650px){
+            .receiptone_3_large-hr {
+                border: none;
+                height: 1px;
+                background-color: #000;
+                width: 43%;
+                margin-left: 627px;
+                /* margin-right: 860px; */
+            }
+
+        }
+       
+  
+
+   @media (max-width: 1250px) {
+    .receiptone_3_tailwind_pos {
+      margin-left: 22rem;
+      margin-top: 1rem;
+    }
+    .receiptone_3_cabang{
+        margin-left: 22rem;
+    }
+    .receiptone_3_margin_no{
+        margin-left: 15rem;
+        margin-top: 3rem;
+      }
+      .receiptone_3_large-hr {
+        border: none;
+        height: 1px;
+        background-color: #000;
+        width:57%;
+        margin-left: 230px; 
+        /* margin-right: 860px ; */
+        }
+        .receiptone_3_item_margin {
+            margin-left: 15rem;
+        }
+        .receiptone_3_margin_below_1 {
+            margin-left: 15rem;
+            margin-top: 0rem;
+        }
+        .receiptone_3_margin_below_2{
+            margin-left: 15rem;
+            margin-top: -5rem;
+          
+        }
+        .receiptone_3_margin_below_3{
+            margin-left: 15rem;
+            margin-top: 0rem;
+          
+        }
+        /* .receiptone_3_margin_below_2{
+            margin-left: 2rem;
+          } */
+}
+
+@media (max-width: 768px) {
+    .receiptone_3_tailwind_pos {
+      margin-left: 9rem;
+      margin-top: 1rem;
+    }
+
+    .receiptone_3_cabang {
+      margin-left: 9rem;
+      margin-top: 1rem;
+    }
+    .receiptone_3_margin_no{
+        margin-left: 3rem;
+        margin-top: 3rem;
+      }
+      .receiptone_3_large-hr {
+        border: none;
+        height: 1px;
+        background-color: #000;
+        width:100%;
+        margin-left: 0px; 
+      }
+        .receiptone_3_item_margin {
+            margin-left: 0rem;
+        }
+        .receiptone_3_margin_below_1 {
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+        .receiptone_3_margin_below_2{
+            margin-left: 0rem;
+            margin-top: -5rem;
+          
+        }
+        .receiptone_3_margin_below_3{
+            margin-left: 0rem;
+            margin-top: 0rem;
+          
+        }
+       
+
+        /* margin-right: 860px ; */
+       
+     /* .receiptone_3_margin_no{
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
+
+    .receiptone_3_margin_below_1{
+      margin-left: 2rem;
+     
+      
+    }
+
+    .receiptone_3_margin_below_2{
+      margin-left: 2rem;
+    }
+
+    .receiptone_3_margin_below_3{
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
+
+    .receiptone_3_item_margin{
+      margin-left: 0rem;
+    }
+    .receiptone_3_large-hr {
+      border: none;
+      height: 1px;
+      background-color: #000;
+      width:100%;
+      margin-left: 0px ;
+      }  */
+  }

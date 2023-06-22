@@ -8,6 +8,7 @@ import { ThemeProvider } from "@material-tailwind/react";
 import Example from './components/Example';
 import Head from './components/Head';
 import Page from './components/Page';
+
 import ShoppingTool from './components/ShoppingTool'
 import ThirdPage from './components/ThirdPage';
 import FourthPage from './components/FourthPage';
@@ -25,6 +26,7 @@ function App() {
       <ThirdPage/>
       <FourthPage/>
       <FooterPage/>
+  
       </ThemeProvider>
      
       

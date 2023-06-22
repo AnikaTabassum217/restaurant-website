@@ -5,6 +5,8 @@ import hero_bannar_bg from '../images/hero-banner-bg.png'
 import hero_bannar from '../images/hero-bg.jpg'
 import hero_banner_1 from '../images/hero-banner.png'
 
+
+
 const FirstPage=()=>{
   return(
       <div>
@@ -14,7 +16,7 @@ const FirstPage=()=>{
                     backgroundImage: `url(${hero_bannar})`,
          }}>
 
-          <div className="grid grid-cols-3 gap-2 sticky top-10 z-10 text-orange-800">
+          <div className="grid grid-cols-3 gap-2 sticky top-4 z-10 text-orange-800">
             <div className=" p-4 text-white text-xl font-bold">Foodie <span className="text-orange-600">.</span></div>
             <div className=" p-4 text-white hidden md:flex  flex items-center justify-end">
               <div className="font-bold hover:text-orange-600">Home</div>
@@ -32,7 +34,7 @@ const FirstPage=()=>{
 
 
     <div className="flex flex-wrap gap-2">
-        <div className="mt-24 mx-20">
+        <div className=" mx-20 mt-auto lg:mt-40">
           <div>
           <p className="text-orange-600 italic">Eat Sleep And</p>
           </div>
@@ -46,7 +48,7 @@ const FirstPage=()=>{
             <Button className="bg-yellow-800 hover:bg-white  hover:text-black">Book A Table</Button> 
           </div>
         </div>
-        <div className="mx-60 mt-4 hidden md:flex">
+        <div className="mx-60 mt-20 hidden md:flex">
         <img src={hero_banner_1}>
         </img>
         </div>

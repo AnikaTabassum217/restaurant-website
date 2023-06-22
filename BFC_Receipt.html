@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Receipt</title>
+  <style>
+    .receipt {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .bfc_token{
+      margin-left: 20px;
+    }
+    
+    .take_out{
+    }
+    
+    .best-fried{
+      margin-left: 15px;
+    }
+    
+    .outlet{
+      margin-bottom: 10px;
+    }
+    
+    .Address{
+      margin-bottom: 10px;
+    }
+    
+    .phone{
+      margin-bottom: 10px;
+    }
+    
+    .sdc{
+      margin-left: 70px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    
+    th, td {
+      padding: 5px;
+      border-bottom: 1px solid #000;
+    }
+    
+    th {
+      text-align: left;
+    }
+    
+    p {
+      margin: 5px 0;
+    }
+    
+    p:last-child {
+      font-weight: bold;
+      text-align: right;
+    }
+    
+    .invoice {
+      /* display: inline-grid;
+      grid-template-columns: 160px 158px;
+      padding: 10px; */
+      overflow: visible;
+    }
+    
+    .grid-container2 {
+      display: inline-grid;
+      grid-template-columns: 160px 160px;
+      padding: 10px;
+    }
+    
+    .grid-container {
+      display: inline-grid;
+      grid-template-columns: 80px 80px 80px 80px;
+      padding: 10px;
+    }
+    
+    .grid-item {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="receipt">
+    <div class="bfc_token">
+      <p><h3>BFC TOKEN # A418-T0</h3></p>
+    </div>
+    <div class="take_out">
+     Take OUT: Self 0
+    </div>
+    <div class="best-fried">
+     <h3>Best Fried Chicken(BFC)</h3>
+    </div>
+    <div class="outlet">
+      Outlet: 13.Mdpur Outlet
+    </div>
+    <div class="Address">Address:House # 25/2,Block# C,Ground Floor,Tajmahal Main Road,Dhaka-1207. 
+    </div>
+    <div class="phone">
+      Ph: 01726493693 &nbsp;&nbsp; Mushuk:6:3
+    </div>
+    <div>
+      VAT Reg: 001344541-0402(Central Reg)
+    </div>
+
+    <div class="sdc">
+      <h1>SDC Receipt</h1>
+    </div>
+
+    <div class="invoice" >
+      <div >User: MD.Sojib Shakh&nbsp;</div>
+      <div >Inv#: 13A230421041888888884444444444444444444444444444</div>
+    </div>
+
+    <div class="grid-container2">
+      <div class="item1">DATE: 21-04-23</div>
+      <div class="item2">Time: 8:59 PM</div>
+    </div>
+    <hr>
+
+    <div class="grid-container">
+      <div class="item1">Description</div>
+      <div class="item2"></div>  
+      <div class="item3">Qty</div>  
+      <div class="item4">Amount</div>  
+    </div>
+    <hr> 
+
+    <!-- Hard Code Start -->
+    <div class="grid-container">
+      <div class="item1">2 pc chicken</div>
+      <div class="item2"></div>  
+      <div class="item3">1</div>  
+      <div class="item4">240</div>  
+    </div>
+
+    <div class="grid-container">
+      <div class="item1">Extra Bun</div>
+      <div class="item2"></div>  
+      <div class="item3">2</div>  
+      <div class="item4">40</div>  
+    </div>
+    <hr> 
+    <!-- Hard Code End -->
+
+    <!-- Total -->
+    <div class="grid-container">
+      <div class="item1">Total</div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4">280</div>
+    </div>
+
+    <!-- SD -->
+    <div class="grid-container">
+      <div class="item1">SD</div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4">20.78</div>
+    </div>
+
+    <!-- VAT -->
+    <div class="grid-container">
+      <div class="item1">VAT</div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4">13.33</div>
+    </div>
+
+    <!-- Payable -->
+    <div class="grid-container">
+      <div class="item1"><b>Payable:</b></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"><b>280</b></div>
+    </div>
+
+    <!-- Paid -->
+    <div class="grid-container">
+      <div class="item1">Paid:</div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4">500.00</div>
+    </div>
+    
+    <!-- Change -->
+    <div class="grid-container">
+      <div class="item1">Change:</div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4">220.00</div>
+    </div>
+
+    <!-- Pay Mode -->
+    <div class="grid-container">
+      <div class="item1">Pay Mode:</div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4">Cash</div>
+    </div>
+    <hr>
+    <hr>
+    <div>
+      Prices are inclusive of SD and VAT
+    </div>
+
+    <div>
+      Powered By: www.GreenSoft.com
+    </div>
+
+  </div>
+</body>
+</html>
